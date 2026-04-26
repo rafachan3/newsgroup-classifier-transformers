@@ -1,0 +1,75 @@
+20 Newsgroups — per-split class distribution
+
+[train] n=15076
+  class  0 'alt.atheism'                  count=  639  p=0.0424
+  class  1 'comp.graphics'                count=  778  p=0.0516
+  class  2 'comp.os.ms-windows.misc'      count=  788  p=0.0523
+  class  3 'comp.sys.ibm.pc.hardware'     count=  786  p=0.0521
+  class  4 'comp.sys.mac.hardware'        count=  770  p=0.0511
+  class  5 'comp.windows.x'               count=  790  p=0.0524
+  class  6 'misc.forsale'                 count=  780  p=0.0517
+  class  7 'rec.autos'                    count=  792  p=0.0525
+  class  8 'rec.motorcycles'              count=  797  p=0.0529
+  class  9 'rec.sport.baseball'           count=  795  p=0.0527
+  class 10 'rec.sport.hockey'             count=  799  p=0.0530
+  class 11 'sci.crypt'                    count=  793  p=0.0526
+  class 12 'sci.electronics'              count=  787  p=0.0522
+  class 13 'sci.med'                      count=  792  p=0.0525
+  class 14 'sci.space'                    count=  790  p=0.0524
+  class 15 'soc.religion.christian'       count=  798  p=0.0529
+  class 16 'talk.politics.guns'           count=  728  p=0.0483
+  class 17 'talk.politics.mideast'        count=  752  p=0.0499
+  class 18 'talk.politics.misc'           count=  620  p=0.0411
+  class 19 'talk.religion.misc'           count=  502  p=0.0333
+  max |p_split - p_full| (per class) = 0.0000
+
+
+[validation] n=1885
+  class  0 'alt.atheism'                  count=   80  p=0.0424
+  class  1 'comp.graphics'                count=   98  p=0.0520
+  class  2 'comp.os.ms-windows.misc'      count=   99  p=0.0525
+  class  3 'comp.sys.ibm.pc.hardware'     count=   98  p=0.0520
+  class  4 'comp.sys.mac.hardware'        count=   96  p=0.0509
+  class  5 'comp.windows.x'               count=   99  p=0.0525
+  class  6 'misc.forsale'                 count=   97  p=0.0515
+  class  7 'rec.autos'                    count=   99  p=0.0525
+  class  8 'rec.motorcycles'              count=   99  p=0.0525
+  class  9 'rec.sport.baseball'           count=  100  p=0.0531
+  class 10 'rec.sport.hockey'             count=  100  p=0.0531
+  class 11 'sci.crypt'                    count=   99  p=0.0525
+  class 12 'sci.electronics'              count=   98  p=0.0520
+  class 13 'sci.med'                      count=   99  p=0.0525
+  class 14 'sci.space'                    count=   99  p=0.0525
+  class 15 'soc.religion.christian'       count=  100  p=0.0531
+  class 16 'talk.politics.guns'           count=   91  p=0.0483
+  class 17 'talk.politics.mideast'        count=   94  p=0.0499
+  class 18 'talk.politics.misc'           count=   77  p=0.0408
+  class 19 'talk.religion.misc'           count=   63  p=0.0334
+  max |p_split - p_full| (per class) = 0.0004
+
+
+[test] n=1885
+  class  0 'alt.atheism'                  count=   80  p=0.0424
+  class  1 'comp.graphics'                count=   97  p=0.0515
+  class  2 'comp.os.ms-windows.misc'      count=   98  p=0.0520
+  class  3 'comp.sys.ibm.pc.hardware'     count=   98  p=0.0520
+  class  4 'comp.sys.mac.hardware'        count=   97  p=0.0515
+  class  5 'comp.windows.x'               count=   99  p=0.0525
+  class  6 'misc.forsale'                 count=   98  p=0.0520
+  class  7 'rec.autos'                    count=   99  p=0.0525
+  class  8 'rec.motorcycles'              count=  100  p=0.0531
+  class  9 'rec.sport.baseball'           count=   99  p=0.0525
+  class 10 'rec.sport.hockey'             count=  100  p=0.0531
+  class 11 'sci.crypt'                    count=   99  p=0.0525
+  class 12 'sci.electronics'              count=   99  p=0.0525
+  class 13 'sci.med'                      count=   99  p=0.0525
+  class 14 'sci.space'                    count=   98  p=0.0520
+  class 15 'soc.religion.christian'       count=   99  p=0.0525
+  class 16 'talk.politics.guns'           count=   91  p=0.0483
+  class 17 'talk.politics.mideast'        count=   94  p=0.0499
+  class 18 'talk.politics.misc'           count=   78  p=0.0414
+  class 19 'talk.religion.misc'           count=   63  p=0.0334
+  max |p_split - p_full| (per class) = 0.0004
+
+
+OOV (DistilBERT WordPiece): occurrences=717776 unique_types=97748

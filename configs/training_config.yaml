@@ -1,0 +1,23 @@
+# DistilBERT fine-tuning (20 Newsgroups). Paths are relative to repository root.
+model_name: "distilbert-base-uncased"
+num_labels: 20
+learning_rate: 2.0e-5
+# 16 is ideal on CUDA; on CPU use 8 if memory-constrained. MPS: use --cpu or
+# reduce batch to avoid OOM in AdamW.
+batch_size: 8
+max_length: 256
+epochs: 5
+# Applied to the custom classification head only (configurable for sweeps)
+dropout: 0.1
+# Dropout values to try when using --sweep
+dropout_rates_to_test: [0.1, 0.2, 0.3]
+optimizer: "adamw"
+weight_decay: 0.01
+max_grad_norm: 1.0
+warmup_ratio: 0.1
+early_stopping_patience: 2
+train_path: "data/processed/train.json"
+validation_path: "data/processed/validation.json"
+output_dir: "models"
+log_path: "reports/training_log.md"
+seed: 42
