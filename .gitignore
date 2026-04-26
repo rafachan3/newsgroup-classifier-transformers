@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.eggs/
+*.egg-info/
+.eggs
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+.venv-*/
+env/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Project data and model artifacts (not versioned; often > 50 MB)
+# Keep empty dirs in git via .gitkeep only
+data/raw/*
+!data/raw/.gitkeep
+models/*
+!models/.gitkeep
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Large local files (git does not enforce size; keep heavy binaries out of VCS)
+# Typical patterns; prefer Git LFS if you must track >50 MB
+*.7z
+*.zip
+# HuggingFace / download caches
+.cache/
+huggingface/
+torch/
+
+# Local large/binary blobs (use Git LFS or object storage to track if needed)
+*.h5
+*.hdf5
+**/large_*.npy
+**/large_*.npz
