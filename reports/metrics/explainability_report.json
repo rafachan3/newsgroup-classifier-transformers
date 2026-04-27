@@ -1,0 +1,5 @@
+{
+  "status": "blocked",
+  "reason": "no checkpoint found in models/",
+  "required_action": "Train model checkpoint in models/ then rerun src/explain.py"
+}

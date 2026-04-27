@@ -56,3 +56,11 @@ Attention-pattern summary: unavailable for this run because no trained checkpoin
 was present. After training produces a checkpoint, rerun `python src/evaluate.py`
 to generate confusion matrix and `attention_*.png` artifacts, then summarize
 correct-vs-misclassified attention behavior here.
+
+
+## Phase 5 explainability/export blocker (2026-04-27)
+
+`src/explain.py` was implemented and executed, but SHAP/LIME explanations and
+ONNX export could not run because no checkpoint exists in `models/`.
+`reports/metrics/explainability_report.json` records the blocker and required
+next step to rerun once training artifacts are available.
