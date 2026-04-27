@@ -1,0 +1,5 @@
+{
+  "status": "blocked",
+  "reason": "no checkpoint found in models/",
+  "required_action": "Train model to produce checkpoint in models/ then rerun evaluate.py"
+}

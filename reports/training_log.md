@@ -43,3 +43,16 @@ recorded here as the pipeline is implemented.
   - `python src/train.py --dropout 0.2 --config configs/training_config.yaml`
   - `python src/train.py --dropout 0.3 --config configs/training_config.yaml`
 - Then append observed validation macro F1 values and best dropout selection.
+
+
+## Phase 4 evaluation blocker (2026-04-27)
+
+Evaluation and interpretation could not run to completion because no model
+checkpoint exists in `models/` (`*_best.pt` / `*_epoch*.pt` missing).
+Accordingly, confusion matrix, attention heatmaps, and class-level bias metrics
+were blocked to avoid fabricated results.
+
+Attention-pattern summary: unavailable for this run because no trained checkpoint
+was present. After training produces a checkpoint, rerun `python src/evaluate.py`
+to generate confusion matrix and `attention_*.png` artifacts, then summarize
+correct-vs-misclassified attention behavior here.
